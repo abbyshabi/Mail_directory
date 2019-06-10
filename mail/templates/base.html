@@ -1,0 +1,26 @@
+{% load bootstrap3 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Email Directory </title>
+
+    {% load static%}
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+      <ul class="nav nav-tabs">
+        <a class="nav-link" href="{% url 'add'%}">Add</a>
+        <a class="nav-link" href="#">List</a>
+      </ul>
+      </nav>
+    {% block content %}
+    {% endblock %}
+    
+</body>
+</html
