@@ -39,3 +39,15 @@ margin-right: auto;
     margin-bottom: auto;
 
   }
+
+.panel{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px;
+}
+.login100-form-btn{
+  margin-top:55px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -16,16 +16,22 @@ def add(request):
         if form.is_valid():
             user = form.save(commit=False)
             user.save()
-        return redirect ('list')
+            context = {
+				user.First_Name:'first_name',
+				user.Last_Name:'last_name',
+				user.Email:'email',
+			}
+            return redirect ('list.html',context)
     else:
         form = UserForm()
    
     return render(request,'add.html',{"form":form})
 
-def directory(request):
-    
-   
-    lists = User.objects.all().reverse()
 
+
+
+def directory(request):
+
+    lists = User.objects.all().reverse()
     return render(request,'list.html',{"lists":lists})
 

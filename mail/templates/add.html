@@ -1,11 +1,12 @@
 {%extends 'base.html'%}
-{% load crispy_forms_tags %}
+{% load bootstrap3 %}
 
 {% block content%}
 <div id="container">
-<form  action ="{%url 'add'%}" method="post" enctype="multipart/form-data">
+   
+<form  action ="{%url 'add'%}" method="post" enctype="multipart/form-data" class="form-group">
     {% csrf_token %}
-    {{ form|crispy }}
+    {% bootstrap_form form%}
        
                <button class="login100-form-btn btn-primary">
                   Add
@@ -13,6 +14,9 @@
                <button class="login100-form-btn btn-danger" style="margin-left:20px;">
                    <a href="/"> Back </a>
                 </button>
+
+
+                
        </div>
    </form> 
 {%endblock%}
