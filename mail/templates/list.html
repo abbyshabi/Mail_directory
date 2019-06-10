@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div id = container>
+<table class="table">
+        <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Firstname</th>
+                  <th scope="col">Lastname</th>
+                  <th scope="col">Email</th>
+                </tr>
+        </thead>
+        <tbody>
+            {%for l in lists%}
+             <tr>
+                    <th scope="row">{{l.id}}</th>
+                    <td>{{l.First_Name}}</td>
+                    <td>{{l.Last_Name}}</td>
+                    <td>{{l.Email}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+</table>
+</div>
+
+
+{%endblock%}

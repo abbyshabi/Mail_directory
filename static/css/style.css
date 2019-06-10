@@ -28,3 +28,14 @@ margin-right: auto;
       margin-left:50%;
       margin-right: 50%;
   }
+
+#container {
+    width: 820px;
+    height: 100%;
+    padding: 10px;
+    
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+
+  }
