@@ -5,7 +5,7 @@
 A simple python 3.6 application that allows a user add contact details into a directory using a Add button and users can also view directory by clicking on the list directory
 ## Setup/Installation Requirements
 * Access github on a web browser
-* clone this repository  from https://github.com/abbyshabi/PhotoBlog
+* clone this repository  from https://github.com/abbyshabi/Mail_directory 
 * Navigate to the cloned project file on your terminal
 * Create a Virtual enviroment "python3.6 -m venv virtual"
 * Install Django in your virtual enviroment "pip install django==1.11"
