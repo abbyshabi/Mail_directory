@@ -9,6 +9,7 @@ from django.core.exceptions import ValidationError
 def welcome(request):
     return render(request ,'index.html')
 
+#The add function is for creating a new email directory entry
 def add(request):
     
     if request.method == 'POST':
@@ -21,7 +22,7 @@ def add(request):
 				user.Last_Name:'last_name',
 				user.Email:'email',
 			}
-            return redirect ('list.html',context)
+            return redirect ('list.html',context) 
     else:
         form = UserForm()
    
@@ -29,9 +30,8 @@ def add(request):
 
 
 
-
+### The directory function is for querying the database and rendering its content on the html page
 def directory(request):
-
     lists = User.objects.all().reverse()
     return render(request,'list.html',{"lists":lists})
 
